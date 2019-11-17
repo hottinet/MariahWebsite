@@ -3,15 +3,19 @@ import injectSheet from 'react-jss'
 import { render } from 'react-dom'
 import { BrowserRouter, Route, Switch, withRouter } from 'react-router-dom'
 import Home from 'pages/Home'
+import NavBar from 'components/NavBar'
 
 const styles = {
 	wholePage: {
+		height: '100%',
 		display: 'flex',
 		justifyContent: 'center',
 	},
 	appContainer: {
 		maxWidth: 1366,
 		width: '100%',
+		height: '100%',
+		position: 'relative',
 	},
 }
 
@@ -25,7 +29,7 @@ const App = ({ location, classes }) => {
 				<Switch>
 					<Route path="/" exact component={Home} />
 				</Switch>
-				{/* NavBar?? */}
+				<NavBar />
 			</div>
 		</div>
 	)
