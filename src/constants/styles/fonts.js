@@ -7,7 +7,7 @@ export const nudistaMedium = {
 export const nudistaBold = {
 	fontFamily: 'nudista-web, sans-serif',
 	fontStyle: 'normal',
-	fontWeight: 700,	
+	fontWeight: 700,
 }
 
 export const aurea = {
