@@ -1,6 +1,8 @@
 import React from 'react'
 import injectSheet from 'react-jss'
 import { NavLink } from 'react-router-dom'
+import { gray } from 'constants/styles/colors'
+import { nudistaMedium } from 'constants/styles/fonts'
 
 const styles = {
 	navBarWrapper: {
@@ -19,6 +21,12 @@ const styles = {
 		width: '100%',
 		justifyContent: 'space-between',
 	},
+	navLink: {
+		textTransform: 'uppercase',
+		textDecoration: 'none',
+		color: gray,
+		...nudistaMedium,
+	},
 }
 
 const NavBar = ({
@@ -27,11 +35,13 @@ const NavBar = ({
 	<div className={classes.navBarWrapper} >
 		<div className={classes.navRow}>
 			<NavLink
+				className={classes.navLink}
 				to="/"
 			>
 				Mariah
 			</NavLink>
 			<NavLink
+				className={classes.navLink}
 				to="/"
 			>
 				Copy Writing
@@ -39,11 +49,13 @@ const NavBar = ({
 		</div>
 		<div className={classes.navRow}>
 			<NavLink
+				className={classes.navLink}
 				to="/"
 			>
 				Editorial
 			</NavLink>
 			<NavLink
+				className={classes.navLink}
 				to="/"
 			>
 				About
