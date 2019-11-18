@@ -56,7 +56,7 @@ const NavBar = ({
 			</NavLink>
 			<NavLink
 				className={classes.navLink}
-				to="/"
+				to="/copy"
 				activeClassName={classes.activePage}
 			>
 				Copy Writing
