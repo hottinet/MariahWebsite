@@ -29,7 +29,7 @@ const App = ({ location, classes }) => {
 			<div className={classes.appContainer}>
 				<Switch>
 					<Route path="/" exact component={Home} />
-					<Route path="/" exact component={Copy} />
+					<Route path="/copy" exact component={Copy} />
 				</Switch>
 				<NavBar />
 			</div>

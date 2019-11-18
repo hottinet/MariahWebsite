@@ -1,9 +1,20 @@
 import React from 'react'
+import injectSheet from 'react-jss'
+import { aurea } from 'constants/styles/fonts'
+import { pink, red } from 'constants/styles/colors'
 
-const Copy = () => (
+const styles = {
+	practiceClass: {
+		...aurea,
+		backgroundColor: pink,
+		color: red,
+	},
+}
+
+const Copy = ({ classes }) => (
 	<>
-		<div>Copy</div>
+		<div className={classes.practiceClass}>Copy</div>
 	</>
 )
 
-export default Copy
+export default injectSheet(styles)(Copy)
