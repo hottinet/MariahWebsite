@@ -1,15 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import injectSheet from 'react-jss'
-import { lightBlue } from 'constants/styles/colors'
 
 const styles = {
 	contentBlockClass: {
+		position: 'relative',
 		display: 'flex',
 		flexDirection: 'column',
-		justifyContent: 'center',
-		backgroundColor: lightBlue,
-		width: '60%',
+		justifyContent: 'flex-start',
+		width: '50%',
+		paddingTop: 120,
 	},
 }
 
