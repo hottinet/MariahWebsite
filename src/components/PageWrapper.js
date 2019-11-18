@@ -4,7 +4,7 @@ import injectSheet from 'react-jss'
 import { lightBlue } from 'constants/styles/colors'
 
 const styles = {
-	pageWrapper:  {
+	pageWrapper: {
 		display: 'flex',
 		flexDirection: 'row',
 		justifyContent: 'center',
