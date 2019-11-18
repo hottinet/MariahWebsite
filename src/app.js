@@ -3,6 +3,7 @@ import injectSheet from 'react-jss'
 import { render } from 'react-dom'
 import { BrowserRouter, Route, Switch, withRouter } from 'react-router-dom'
 import Home from 'pages/Home'
+import Copy from 'pages/Copy'
 import NavBar from 'components/NavBar'
 
 const styles = {
@@ -28,6 +29,7 @@ const App = ({ location, classes }) => {
 			<div className={classes.appContainer}>
 				<Switch>
 					<Route path="/" exact component={Home} />
+					<Route path="/" exact component={Copy} />
 				</Switch>
 				<NavBar />
 			</div>

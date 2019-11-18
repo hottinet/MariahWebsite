@@ -15,7 +15,7 @@ const styles = {
 		display: 'flex',
 		flexDirection: 'column',
 		justifyContent: 'space-between',
-		position: 'absolute',
+		position: 'fixed',
 		top: 0,
 		left: 0,
 		width: '100%',
@@ -33,7 +33,7 @@ const styles = {
 		color: gray,
 		...nudistaMedium,
 		padding: 4,
-		'&:hover':{
+		'&:hover': {
 			...activeLinkStyle,
 		},
 	},
