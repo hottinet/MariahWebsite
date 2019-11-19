@@ -4,6 +4,7 @@ import { render } from 'react-dom'
 import { BrowserRouter, Route, Switch, withRouter } from 'react-router-dom'
 import Home from 'pages/Home'
 import Copy from 'pages/Copy'
+import Editorial from 'pages/Editorial'
 import NavBar from 'components/NavBar'
 
 const styles = {
@@ -30,6 +31,7 @@ const App = ({ location, classes }) => {
 				<Switch>
 					<Route path="/" exact component={Home} />
 					<Route path="/copy" exact component={Copy} />
+					<Route path="/editorial" exact component={Editorial} />
 				</Switch>
 				<NavBar />
 			</div>

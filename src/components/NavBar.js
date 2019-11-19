@@ -65,7 +65,7 @@ const NavBar = ({
 		<div className={classes.navRow}>
 			<NavLink
 				className={classes.navLink}
-				to="/"
+				to="/editorial"
 				activeClassName={classes.activePage}
 			>
 				Editorial

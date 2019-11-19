@@ -8,7 +8,7 @@ const styles = {
 	headerClass: {
 		...aurea,
 		color: gray,
-		fontSize: 64,
+		fontSize: 56,
 	},
 }
 
