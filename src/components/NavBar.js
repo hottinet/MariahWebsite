@@ -72,7 +72,7 @@ const NavBar = ({
 			</NavLink>
 			<NavLink
 				className={classes.navLink}
-				to="/"
+				to="/about"
 				activeClassName={classes.activePage}
 			>
 				About

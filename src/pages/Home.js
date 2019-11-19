@@ -1,8 +1,12 @@
 import React from 'react'
 
+import PageWrapper from 'components/PageWrapper'
+
 const Home = () => (
 	<>
-		<div>Mariah</div>
+		<PageWrapper>
+			<div>Mariah</div>
+		</PageWrapper>
 	</>
 )
 
