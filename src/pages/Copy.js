@@ -1,5 +1,8 @@
 import React from 'react'
 import injectSheet from 'react-jss'
+import { NavLink } from 'react-router-dom'
+
+import { darkBlue } from 'constants/styles/colors'
 
 import LogoBlock from 'components/LogoBlock'
 import LogoBlockWrapper from 'components/LogoBlockWrapper'
@@ -21,6 +24,11 @@ const styles = {
 	icon: {
 		width: '40%',
 	},
+	imageSVG: {
+		'&:hover': {
+			color: darkBlue,
+		},
+	}
 }
 
 const Copy = ({ classes }) => (
@@ -31,7 +39,9 @@ const Copy = ({ classes }) => (
 			</PageIconWrapper>
 			<LogoBlockWrapper>
 				<LogoBlock>
-					<img className={classes.imageSvg} src={Starbucks} alt="" />
+					<NavLink to="/">
+						<img className={classes.imageSvg} src={Starbucks} alt="" />
+					</NavLink>
 					<img className={classes.imageSvg} src={Fox} alt="" />
 					<img className={classes.imageSvg} src={Chase} alt="" />
 					<img className={classes.imageSvg} src={CPC} alt="" />

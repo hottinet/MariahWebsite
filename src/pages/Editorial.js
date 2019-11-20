@@ -15,7 +15,7 @@ const styles = {
 		...nudistaBold,
 		color: gray,
 		fontSize: 24,
-		lineHeight: 1.5,
+		lineHeight: 1,
 		textDecoration: 'none',
 		'&:hover': {
 			color: red,
@@ -36,9 +36,9 @@ const Editorial = ({ classes }) => (
 				<Header>Man Repeller</Header>
 				<a href="https://www.google.com" className={classes.LinkStyle}>Lorem ipsum dolor sit amet,</a>
 				<br />
-				<a href="">Lorem ipsum dolor sit amet,</a>
+				<a href="https://www.google.com" className={classes.LinkStyle}>Lorem ipsum dolor sit amet,</a>
 				<br />
-				<a href="">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</a>
+				<a href="https://www.google.com" className={classes.LinkStyle}>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</a>
 			</ContentBlock>
 		</PageWrapper>
 	</>
