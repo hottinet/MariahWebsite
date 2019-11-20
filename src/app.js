@@ -6,6 +6,7 @@ import Home from 'pages/Home'
 import Copy from 'pages/Copy'
 import Editorial from 'pages/Editorial'
 import About from 'pages/About'
+import Starbucks from 'pages/Starbucks'
 import NavBar from 'components/NavBar'
 
 const styles = {
@@ -26,7 +27,7 @@ const App = ({ location, classes }) =>
 // Create global effects or state here
 // with access to router location
 
-	 (
+	(
 		<div className={classes.wholePage}>
 			<div className={classes.appContainer}>
 				<Switch>
@@ -34,6 +35,7 @@ const App = ({ location, classes }) =>
 					<Route path="/copy" exact component={Copy} />
 					<Route path="/editorial" exact component={Editorial} />
 					<Route path="/about" exact component={About} />
+					<Route path="/starbucks" exact component={Starbucks} />
 				</Switch>
 				<NavBar />
 			</div>

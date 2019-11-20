@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import injectSheet from 'react-jss'
-import { nudistaBold } from 'constants/styles/fonts'
+import { nudistaMedium } from 'constants/styles/fonts'
 import { gray, red } from 'constants/styles/colors'
 
 const styles = {
 	LinkBlockClass: {
-		...nudistaBold,
+		...nudistaMedium,
 		color: gray,
 		fontSize: 24,
 		lineHeight: 1.5,
