@@ -1,5 +1,6 @@
 import React from 'react'
 import injectSheet from 'react-jss'
+import { NavLink } from 'react-router-dom'
 
 import ContentBlock from 'components/ContentBlock'
 import PageWrapper from 'components/PageWrapper'
@@ -28,9 +29,11 @@ const Starbucks = ({ classes }) => (
 	<>
 		<PageWrapper>
 			<ContentBlock>
-				<PageIconWrapper>
-					<img className={classes.icon} src={CopyWritingIcon} alt="" />
-				</PageIconWrapper>
+				<NavLink to="/Copy">
+					<PageIconWrapper>
+						<img className={classes.icon} src={CopyWritingIcon} alt="" />
+					</PageIconWrapper>
+				</NavLink>
 				<Header>Starbucks Doubleshot</Header>
 				<DescriptionText>When we began our work with Starbucks Doubleshot, they were looking to revamp their social presence. To do so, we developed the voice behind our *Doubleshot guy* and began concepting, creating, and presenting monthly content that supported that vision. Together with my co-writer, we created about 20 pieces of original content, both paid and organic, across Facebook, Twitter, and Tumblr. </DescriptionText>
 				<ImageAspectRatio>
