@@ -9,6 +9,7 @@ const styles = {
 		...nudistaMedium,
 		color: gray,
 		fontSize: 16,
+		paddingBottom: 40,
 	},
 }
 

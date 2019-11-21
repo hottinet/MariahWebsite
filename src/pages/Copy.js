@@ -19,14 +19,16 @@ const styles = {
 		width: '100%',
 		paddingBottom: 50,
 	},
-	}
+	icon: {
+		width: '30%',
+	},
 }
 
 const Copy = ({ classes }) => (
 	<>
 		<PageWrapper>
 			<PageIconWrapper>
-				<img className={classes.icon} src={CopyWritingIcon} alt="" />
+				<img src={CopyWritingIcon} className={classes.icon} alt="" />
 			</PageIconWrapper>
 			<LogoBlockWrapper>
 				<LogoBlock>

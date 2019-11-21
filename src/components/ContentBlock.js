@@ -8,9 +8,9 @@ const styles = {
 		display: 'flex',
 		flexDirection: 'column',
 		justifyContent: 'start-flex',
-		height: 3000,
 		width: '50%',
 		paddingTop: 140,
+		paddingBottom: 200,
 	},
 }
 

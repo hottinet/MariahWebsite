@@ -54,7 +54,11 @@ const Editorial = ({ classes }) => (
 
 				<a href="https://www.manrepeller.com/2018/04/things-that-leave-me-feeling-intimidated.html" className={classes.LinkStyle}>A List of Things That Intimidate Me - Including My Hairstylist, John </a>
 
-			</ContentBlock>
+				<a href="https://www.manrepeller.com/2018/05/how-to-fix-a-relationship-with-self-help.html" className={classes.LinkStyle}>What My Tower of Self-Help Books Said About My Relationship</a>
+
+				<a href="https://www.manrepeller.com/2019/03/a-list-of-places-ive-recently-cried-in-public.html" className={classes.LinkStyle}>A List of Places I’ve Recently Cried in Public</a>
+
+				<a href="https://www.manrepeller.com/2019/03/dumped-by-therapist.html" className={classes.LinkStyle}>On Coming to Terms with Being Dumped by My Therapist </a>			</ContentBlock>
 		</PageWrapper>
 	</>
 )
