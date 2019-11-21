@@ -23,7 +23,7 @@ const About = ({ classes }) => (
 					<img className={classes.icon} src={AboutIcon} alt="" />
 				</PageIconWrapper>
 				<Header>About Me</Header>
-				<DescriptionText>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing</DescriptionText>
+				<DescriptionText>Mariah Adcox is a writer and MFA candidate in Creative Nonfiction at Columbia University in New York City. </DescriptionText>
 			</ContentBlock>
 		</PageWrapper>
 	</>
