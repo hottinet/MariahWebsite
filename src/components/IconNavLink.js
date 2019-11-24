@@ -18,11 +18,26 @@ const styles = {
 	},
 }
 
+const ImageWrapper = ({ children, to, classes }) => {
+	if (to) {
+		return (
+			<NavLink className={classes.link} to={to}>
+				{children}
+			</NavLink>
+		)
+	}
+	return (
+		<div className={classes.link}>
+			{children}
+		</div>
+	)
+}
+
 const IconNavLink = ({ to, src, alt, classes }) => (
 	<div className={classes.navLinkWrapper}>
-		<NavLink className={classes.link} to={to}>
+		<ImageWrapper to={to} classes={classes}>
 			<img className={classes.icon} src={src} alt={alt} />
-		</NavLink>
+		</ImageWrapper>
 	</div>
 )
 

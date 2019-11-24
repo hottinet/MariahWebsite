@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom'
 import LogoBlock from 'components/LogoBlock'
 import LogoBlockWrapper from 'components/LogoBlockWrapper'
 import PageWrapper from 'components/PageWrapper'
+import IconNavLink from 'components/IconNavLink'
 
 import CopyWritingIcon from 'static/svg/copy-title.svg'
 import Starbucks from 'static/svg/Logos/starbucks.svg'
@@ -26,7 +27,7 @@ const styles = {
 const Copy = ({ classes }) => (
 	<>
 		<PageWrapper>
-			<img src={CopyWritingIcon} className={classes.icon} alt="" />
+			<IconNavLink src={CopyWritingIcon} />
 			<LogoBlockWrapper>
 				<LogoBlock>
 					<NavLink to="/Starbucks">
