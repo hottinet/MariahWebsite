@@ -7,7 +7,7 @@ const styles = {
 		position: 'relative',
 		display: 'flex',
 		flexDirection: 'column',
-		justifyContent: 'start-flex',
+		alignItems: 'center',
 		width: '50%',
 		paddingTop: 140,
 		paddingBottom: 200,

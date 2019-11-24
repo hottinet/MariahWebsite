@@ -6,7 +6,7 @@ import ContentBlock from 'components/ContentBlock'
 import PageWrapper from 'components/PageWrapper'
 import Header from 'components/Header'
 import DescriptionText from 'components/DescriptionText'
-import PageIconWrapper from 'components/PageIconWrapper'
+import IconNavLink from 'components/IconNavLink'
 import ImageAspectRatio from 'components/ImageAspectRatio'
 
 import CopyWritingIcon from 'static/svg/copy-title.svg'
@@ -17,7 +17,6 @@ import StarbucksTweet4 from 'static/projects/starbucks/starbucks-4.png'
 
 const styles = {
 	icon: {
-		width: '30%',
 	},
 	imageWidth: {
 		width: '100%',
@@ -28,14 +27,12 @@ const styles = {
 const Starbucks = ({ classes }) => (
 	<>
 		<PageWrapper>
+			<IconNavLink src={CopyWritingIcon} to="/copy" />
 			<ContentBlock>
-				<NavLink to="/Copy">
-					<PageIconWrapper>
-						<img className={classes.icon} src={CopyWritingIcon} alt="" />
-					</PageIconWrapper>
-				</NavLink>
 				<Header>Starbucks Doubleshot</Header>
-				<DescriptionText>When we began our work with Starbucks Doubleshot, they were looking to revamp their social presence. To do so, we developed the voice behind our *Doubleshot guy* and began concepting, creating, and presenting monthly content that supported that vision. Together with my co-writer, we created about 20 pieces of original content, both paid and organic, across Facebook, Twitter, and Tumblr. </DescriptionText>
+				<DescriptionText>
+					When we began our work with Starbucks Doubleshot, they were looking to revamp their social presence. To do so, we developed the voice behind our *Doubleshot guy* and began concepting, creating, and presenting monthly content that supported that vision. Together with my co-writer, we created about 20 pieces of original content, both paid and organic, across Facebook, Twitter, and Tumblr.
+				</DescriptionText>
 				<ImageAspectRatio>
 					<img src={StarbucksTweet1} className={classes.imageWidth} alt="" />
 					<img src={StarbucksTweet2} className={classes.imageWidth} alt="" />

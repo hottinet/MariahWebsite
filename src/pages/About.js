@@ -5,7 +5,6 @@ import ContentBlock from 'components/ContentBlock'
 import PageWrapper from 'components/PageWrapper'
 import Header from 'components/Header'
 import DescriptionText from 'components/DescriptionText'
-import PageIconWrapper from 'components/PageIconWrapper'
 
 import AboutIcon from 'static/svg/about-title.svg'
 
@@ -19,9 +18,7 @@ const About = ({ classes }) => (
 	<>
 		<PageWrapper>
 			<ContentBlock>
-				<PageIconWrapper>
-					<img className={classes.icon} src={AboutIcon} alt="" />
-				</PageIconWrapper>
+				<img className={classes.icon} src={AboutIcon} alt="" />
 				<Header>About Me</Header>
 				<DescriptionText>Mariah Adcox is a writer and MFA candidate in Creative Nonfiction at Columbia University in New York City. </DescriptionText>
 			</ContentBlock>

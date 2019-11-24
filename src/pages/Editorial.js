@@ -3,7 +3,6 @@ import injectSheet from 'react-jss'
 
 import ContentBlock from 'components/ContentBlock'
 import PageWrapper from 'components/PageWrapper'
-import PageIconWrapper from 'components/PageIconWrapper'
 import Header from 'components/Header'
 
 import EditIcon from 'static/svg/edit-title.svg'
@@ -31,9 +30,7 @@ const Editorial = ({ classes }) => (
 	<>
 		<PageWrapper>
 			<ContentBlock>
-				<PageIconWrapper>
-					<img className={classes.icon} src={EditIcon} alt="" />
-				</PageIconWrapper>
+				<img className={classes.icon} src={EditIcon} alt="" />
 				<Header>Man Repeller</Header>
 				<br />
 				<a href="https://www.manrepeller.com/2019/08/amazing-good-bad-things.html" className={classes.LinkStyle}>11 Things That Are Amazing When They’re Good, Terrible When They’re Bad</a>
