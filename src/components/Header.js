@@ -7,7 +7,6 @@ import { gray } from 'constants/styles/colors'
 const styles = {
 	headerClass: {
 		...aurea,
-		alignSelf: 'flex-start',
 		color: gray,
 		fontSize: 56,
 	},
