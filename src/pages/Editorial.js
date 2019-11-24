@@ -8,7 +8,7 @@ import IconNavLink from 'components/IconNavLink'
 import Link from 'components/Link'
 
 import EditIcon from 'static/svg/edit-title.svg'
-import { nudistaMedium, nudistaBold } from 'constants/styles/fonts'
+import { nudistaMedium } from 'constants/styles/fonts'
 import { gray, red } from 'constants/styles/colors'
 import editorialLinks from 'constants/editorial'
 

@@ -13,21 +13,18 @@ const styles = {
 	icon: {
 		width: '100%',
 	},
-	link: {
-		width: '20%',
-	},
 }
 
-const ImageWrapper = ({ children, to, classes }) => {
+const ImageWrapper = ({ children, to }) => {
 	if (to) {
 		return (
-			<NavLink className={classes.link} to={to}>
+			<NavLink to={to}>
 				{children}
 			</NavLink>
 		)
 	}
 	return (
-		<div className={classes.link}>
+		<div>
 			{children}
 		</div>
 	)

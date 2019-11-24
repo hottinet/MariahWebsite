@@ -2,8 +2,6 @@ import React from 'react'
 import injectSheet from 'react-jss'
 import { NavLink } from 'react-router-dom'
 
-import LogoBlock from 'components/LogoBlock'
-import LogoBlockWrapper from 'components/LogoBlockWrapper'
 import PageWrapper from 'components/PageWrapper'
 import IconNavLink from 'components/IconNavLink'
 
@@ -19,26 +17,25 @@ const styles = {
 		width: '100%',
 		paddingBottom: 50,
 	},
-	icon: {
-		width: '30%',
-	},
+	logoWrapper:{
+		display: 'flex',
+		flexDirection: 'column',
+	}
 }
 
 const Copy = ({ classes }) => (
 	<>
 		<PageWrapper>
 			<IconNavLink src={CopyWritingIcon} />
-			<LogoBlockWrapper>
-				<LogoBlock>
-					<NavLink to="/Starbucks">
-						<img className={classes.imageSvg} src={Starbucks} alt="" />
-					</NavLink>
-					<img className={classes.imageSvg} src={Fox} alt="" />
-					<img className={classes.imageSvg} src={Chase} alt="" />
-					<img className={classes.imageSvg} src={CPC} alt="" />
-					<img className={classes.imageSvg} src={Uber} alt="" />
-				</LogoBlock>
-			</LogoBlockWrapper>
+			<div className={classes.logoWrapper}>
+				<NavLink to="/Starbucks">
+					<img className={classes.imageSvg} src={Starbucks} alt="" />
+				</NavLink>
+				<img className={classes.imageSvg} src={Fox} alt="" />
+				<img className={classes.imageSvg} src={Chase} alt="" />
+				<img className={classes.imageSvg} src={CPC} alt="" />
+				<img className={classes.imageSvg} src={Uber} alt="" />
+			</div>
 		</PageWrapper>
 	</>
 )
