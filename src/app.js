@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import injectSheet from 'react-jss'
 import { render } from 'react-dom'
 import { BrowserRouter, Route, Switch, withRouter } from 'react-router-dom'
@@ -23,11 +23,12 @@ const styles = {
 	},
 }
 
-const App = ({ location, classes }) =>
-// Create global effects or state here
-// with access to router location
-
-	(
+const App = ({ location, classes }) => {
+	useEffect(() => {
+		// setIsMenuOpen(false)
+		window.scrollTo(0, 0)
+	}, [location])
+	return (
 		<div className={classes.wholePage}>
 			<div className={classes.appContainer}>
 				<NavBar />
@@ -41,6 +42,7 @@ const App = ({ location, classes }) =>
 			</div>
 		</div>
 	)
+}
 
 
 const RouterApp = injectSheet(styles)(withRouter(props => <App {...props} />))
