@@ -21,7 +21,6 @@ const styles = {
 		width: '100%',
 		height: '100%',
 		padding: 24,
-		zIndex: '-1',
 	},
 	navRow: {
 		display: 'flex',
@@ -51,6 +50,7 @@ const NavBar = ({
 			<NavLink
 				className={classes.navLink}
 				to="/"
+				exact
 				activeClassName={classes.activePage}
 			>
 				Mariah

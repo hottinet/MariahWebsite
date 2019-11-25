@@ -7,7 +7,6 @@ import { mdIconHeight, smIconHeight } from 'constants/styles/iconHeight'
 
 const styles = {
 	navLinkWrapper: {
-		width: '100%',
 		display: 'flex',
 		justifyContent: 'center',
 		position: 'fixed',

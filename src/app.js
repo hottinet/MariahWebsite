@@ -30,6 +30,7 @@ const App = ({ location, classes }) =>
 	(
 		<div className={classes.wholePage}>
 			<div className={classes.appContainer}>
+				<NavBar />
 				<Switch>
 					<Route path="/" exact component={Home} />
 					<Route path="/copy" exact component={Copy} />
@@ -37,7 +38,6 @@ const App = ({ location, classes }) =>
 					<Route path="/about" exact component={About} />
 					<Route path="/starbucks" exact component={Starbucks} />
 				</Switch>
-				<NavBar />
 			</div>
 		</div>
 	)
