@@ -1,5 +1,5 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 import injectSheet from 'react-jss'
 import IconNavLink from 'components/IconNavLink'
 import routeColorMap from 'constants/styles/routeColorMap'
@@ -26,16 +26,14 @@ const styles = {
 	},
 }
 
-const PageWrapper = ({ children, iconSrc, navTo, classes }) => {
-	// const { pathname } = useLocation()
-	// console.log(pathname)
-	const location = useLocation()
-	return (
-		<div style={{ backgroundColor: routeColorMap[''] }} className={classes.pageWrapper}>
-			<IconNavLink src={iconSrc} to={navTo} />
-			<div className={classes.childWrapper}>{children}</div>
-		</div>
-	)
-}
+const PageWrapper = ({ children, iconSrc, navTo, location, classes }) => (
+	<div
+		style={{ backgroundColor: routeColorMap[location.pathname] }}
+		className={classes.pageWrapper}
+	>
+		<IconNavLink src={iconSrc} to={navTo} />
+		<div className={classes.childWrapper}>{children}</div>
+	</div>
+)
 
-export default injectSheet(styles)(PageWrapper)
+export default injectSheet(styles)(withRouter(PageWrapper))
