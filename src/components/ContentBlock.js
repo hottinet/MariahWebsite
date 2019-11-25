@@ -8,8 +8,6 @@ const styles = {
 		display: 'flex',
 		flexDirection: 'column',
 		width: '50%',
-		paddingTop: 140,
-		paddingBottom: 200,
 	},
 }
 

@@ -3,7 +3,6 @@ import injectSheet from 'react-jss'
 import { NavLink } from 'react-router-dom'
 
 import PageWrapper from 'components/PageWrapper'
-import IconNavLink from 'components/IconNavLink'
 
 import CopyWritingIcon from 'static/svg/copy-title.svg'
 import Starbucks from 'static/svg/Logos/starbucks.svg'
@@ -24,20 +23,17 @@ const styles = {
 }
 
 const Copy = ({ classes }) => (
-	<>
-		<PageWrapper>
-			<IconNavLink src={CopyWritingIcon} />
-			<div className={classes.logoWrapper}>
-				<NavLink to="/Starbucks">
-					<img className={classes.imageSvg} src={Starbucks} alt="" />
-				</NavLink>
-				<img className={classes.imageSvg} src={Fox} alt="" />
-				<img className={classes.imageSvg} src={Chase} alt="" />
-				<img className={classes.imageSvg} src={CPC} alt="" />
-				<img className={classes.imageSvg} src={Uber} alt="" />
-			</div>
-		</PageWrapper>
-	</>
+	<PageWrapper iconSrc={CopyWritingIcon}>
+		<div className={classes.logoWrapper}>
+			<NavLink to="/Starbucks">
+				<img className={classes.imageSvg} src={Starbucks} alt="" />
+			</NavLink>
+			<img className={classes.imageSvg} src={Fox} alt="" />
+			<img className={classes.imageSvg} src={Chase} alt="" />
+			<img className={classes.imageSvg} src={CPC} alt="" />
+			<img className={classes.imageSvg} src={Uber} alt="" />
+		</div>
+	</PageWrapper>
 )
 
 export default injectSheet(styles)(Copy)

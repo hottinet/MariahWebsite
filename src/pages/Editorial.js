@@ -4,7 +4,6 @@ import injectSheet from 'react-jss'
 import ContentBlock from 'components/ContentBlock'
 import PageWrapper from 'components/PageWrapper'
 import Header from 'components/Header'
-import IconNavLink from 'components/IconNavLink'
 import Link from 'components/Link'
 
 import EditIcon from 'static/svg/edit-title.svg'
@@ -35,8 +34,7 @@ const EditorialLinks = () => editorialLinks.map(
 )
 
 const Editorial = ({ classes }) => (
-	<PageWrapper>
-		<IconNavLink src={EditIcon} />
+	<PageWrapper iconSrc={EditIcon}>
 		<ContentBlock>
 			<Header>Man Repeller</Header>
 			<EditorialLinks />

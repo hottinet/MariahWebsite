@@ -1,4 +1,4 @@
 export const xsIconHeight = 90
-export const smIconHeight = 150
-export const mdIconHeight = 200
+export const smIconHeight = 100
+export const mdIconHeight = 120
 export const lgIconHeight = 250

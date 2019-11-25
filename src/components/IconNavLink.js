@@ -2,6 +2,9 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import injectSheet from 'react-jss'
 
+import { SM_MIN_STRING } from 'constants/styles/breakpoints'
+import { mdIconHeight, smIconHeight } from 'constants/styles/iconHeight'
+
 const styles = {
 	navLinkWrapper: {
 		width: '100%',
@@ -11,7 +14,12 @@ const styles = {
 		zIndex: 5,
 	},
 	icon: {
-		width: '100%',
+		height: smIconHeight,
+	},
+	[SM_MIN_STRING]: {
+		icon: {
+			height: mdIconHeight,
+		},
 	},
 }
 
