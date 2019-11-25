@@ -15,6 +15,7 @@ const styles = {
 	},
 	childWrapper: {
 		display: 'flex',
+		flexDirection: 'column',
 		justifyContent: 'center',
 		width: '100%',
 		marginTop: smIconHeight + 16,

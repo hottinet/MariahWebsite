@@ -16,16 +16,16 @@ const styles = {
 		width: '100%',
 		paddingBottom: 50,
 	},
-	logoWrapper:{
+	logoWrapper: {
 		display: 'flex',
 		flexDirection: 'column',
-	}
+	},
 }
 
 const Copy = ({ classes }) => (
 	<PageWrapper iconSrc={CopyWritingIcon}>
 		<div className={classes.logoWrapper}>
-			<NavLink to="/Starbucks">
+			<NavLink to="/starbucks">
 				<img className={classes.imageSvg} src={Starbucks} alt="" />
 			</NavLink>
 			<img className={classes.imageSvg} src={Fox} alt="" />
