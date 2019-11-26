@@ -12,16 +12,17 @@ const styles = {
 		justifyContent: 'center',
 		width: '100%',
 		minHeight: '100%',
+		paddingBottom: 200,
 	},
 	childWrapper: {
 		display: 'flex',
 		justifyContent: 'center',
 		width: '100%',
-		marginTop: smIconHeight + 16,
+		marginTop: smIconHeight + 24,
 	},
 	[SM_MIN_STRING]: {
 		childWrapper: {
-			marginTop: mdIconHeight + 16,
+			marginTop: mdIconHeight + 24,
 		},
 	},
 }

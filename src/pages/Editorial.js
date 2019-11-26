@@ -37,6 +37,7 @@ const Editorial = ({ classes }) => (
 	<PageWrapper iconSrc={EditIcon}>
 		<ContentBlock>
 			<Header>Man Repeller</Header>
+			<br />
 			<EditorialLinks />
 		</ContentBlock>
 	</PageWrapper>

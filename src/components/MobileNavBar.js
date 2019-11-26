@@ -1,13 +1,13 @@
 import React from 'react'
 import injectSheet from 'react-jss'
 import { NavLink } from 'react-router-dom'
-import { nudistaMedium } from 'constants/styles/fonts'
+import { aureaItalic } from 'constants/styles/fonts'
 import { gray } from 'constants/styles/colors'
 import { SM_MIN_STRING } from 'constants/styles/breakpoints'
 
 const styles = {
 	mariahLink: {
-		...nudistaMedium,
+		...aureaItalic,
 		color: gray,
 		textDecoration: 'none',
 	},
@@ -18,6 +18,10 @@ const styles = {
 		position: 'fixed',
 		bottom: 0,
 		zIndex: 5,
+		display: 'flex',
+		justifyContent: 'space-between',
+		padding: 20,
+		fontSize: 24,
 	},
 	[SM_MIN_STRING]: {
 		mobileNavWrapper: {
@@ -30,6 +34,7 @@ const MobileNavBar = ({
 	classes,
 }) => (
 	<div className={classes.mobileNavWrapper}>
+		<NavLink className={classes.mariahLink} to="/" exact> Menu </NavLink>
 		<NavLink className={classes.mariahLink} to="/" exact> Mariah </NavLink>
 	</div>
 )

@@ -11,6 +11,7 @@ const styles = {
 		justifyContent: 'center',
 		position: 'fixed',
 		zIndex: 5,
+		paddingTop: 8,
 	},
 	icon: {
 		height: smIconHeight,
