@@ -8,6 +8,7 @@ import Editorial from 'pages/Editorial'
 import About from 'pages/About'
 import Starbucks from 'pages/Starbucks'
 import NavBar from 'components/NavBar'
+import MobileNavBar from 'components/MobileNavBar'
 
 const styles = {
 	wholePage: {
@@ -32,6 +33,7 @@ const App = ({ location, classes }) => {
 		<div className={classes.wholePage}>
 			<div className={classes.appContainer}>
 				<NavBar />
+				<MobileNavBar />
 				<Switch>
 					<Route path="/" exact component={Home} />
 					<Route path="/copy" exact component={Copy} />

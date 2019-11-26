@@ -1,13 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import injectSheet from 'react-jss'
+import { SM_MIN_STRING } from 'constants/styles/breakpoints'
 
 const styles = {
 	contentBlockClass: {
 		position: 'relative',
 		display: 'flex',
 		flexDirection: 'column',
-		width: '50%',
+		width: '80%',
+	},
+	[SM_MIN_STRING]: {
+		contentBlockClass: {
+			width: '50%',
+		},
 	},
 }
 

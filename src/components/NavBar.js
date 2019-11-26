@@ -3,6 +3,7 @@ import injectSheet from 'react-jss'
 import { NavLink } from 'react-router-dom'
 import { gray, white } from 'constants/styles/colors'
 import { nudistaMedium, nudistaBold } from 'constants/styles/fonts'
+import { SM_MIN_STRING } from 'constants/styles/breakpoints'
 
 const activeLinkStyle = {
 	...nudistaBold,
@@ -12,15 +13,20 @@ const activeLinkStyle = {
 
 const styles = {
 	navBarWrapper: {
-		display: 'flex',
-		flexDirection: 'column',
-		justifyContent: 'space-between',
-		position: 'fixed',
-		top: 0,
-		left: 0,
-		width: '100%',
-		height: '100%',
-		padding: 24,
+		display: 'none',
+	},	
+	[SM_MIN_STRING]: {
+		navBarWrapper: {
+			display: 'flex',
+			flexDirection: 'column',
+			justifyContent: 'space-between',
+			position: 'fixed',
+			top: 0,
+			left: 0,
+			width: '100%',
+			height: '100%',
+			padding: 24,
+		},
 	},
 	navRow: {
 		display: 'flex',
