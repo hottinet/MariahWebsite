@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import injectSheet from 'react-jss'
+import clsx from 'clsx'
 import { NavLink } from 'react-router-dom'
 import { aureaItalic } from 'constants/styles/fonts'
 import { gray } from 'constants/styles/colors'
@@ -14,6 +15,15 @@ const styles = {
 		...aureaItalic,
 		color: gray,
 		textDecoration: 'none',
+	},
+	button: {
+		border: 'none',
+		fontSize: 24,
+		paddingTop: 0,
+		margin: 0,
+		'&:active': {
+			border: 'none',
+		},
 	},
 	mobileNavWrapper: {
 		backgroundColor: 'white',
@@ -42,7 +52,15 @@ const MobileNavBar = ({ classes }) => {
 		<div>
 			<MobileMenu isMenuOpen={isMenuOpen} />
 			<div className={classes.mobileNavWrapper}>
-				<button className={classes.mariahLink} onClick={toggleMenu}> Menu </button>
+				<button
+					className={clsx(
+						classes.mariahLink,
+						classes.button,
+					)}
+					onClick={toggleMenu}
+				>
+					Menu
+				</button>
 				<NavLink className={classes.mariahLink} to="/" exact> Mariah </NavLink>
 			</div>
 		</div>
