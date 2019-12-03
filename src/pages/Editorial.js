@@ -33,7 +33,7 @@ const EditorialLinks = () => editorialLinks.map(
 	linkObject => <Link href={linkObject.href} text={linkObject.text} />,
 )
 
-const Editorial = ({ classes }) => (
+const Editorial = () => (
 	<PageWrapper iconSrc={EditIcon}>
 		<ContentBlock>
 			<Header>Man Repeller</Header>

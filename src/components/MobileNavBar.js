@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import injectSheet from 'react-jss'
 import { NavLink } from 'react-router-dom'
 import { aureaItalic } from 'constants/styles/fonts'
 import { gray } from 'constants/styles/colors'
 import { SM_MIN_STRING } from 'constants/styles/breakpoints'
+import MobileMenu from 'components/MobileMenu'
 
 const styles = {
+	menu: {
+		display: 'none',
+	},
 	mariahLink: {
 		...aureaItalic,
 		color: gray,
@@ -30,13 +34,19 @@ const styles = {
 	},
 }
 
-const MobileNavBar = ({
-	classes,
-}) => (
-	<div className={classes.mobileNavWrapper}>
-		<NavLink className={classes.mariahLink} to="/" exact> Menu </NavLink>
-		<NavLink className={classes.mariahLink} to="/" exact> Mariah </NavLink>
-	</div>
-)
+
+const MobileNavBar = ({ classes }) => {
+	const [isMenuOpen, setIsMenuOpen] = useState(false)
+	const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
+	return (
+		<div>
+			<MobileMenu isMenuOpen={isMenuOpen} />
+			<div className={classes.mobileNavWrapper}>
+				<button className={classes.mariahLink} onClick={toggleMenu}> Menu </button>
+				<NavLink className={classes.mariahLink} to="/" exact> Mariah </NavLink>
+			</div>
+		</div>
+	)
+}
 
 export default injectSheet(styles)(MobileNavBar)

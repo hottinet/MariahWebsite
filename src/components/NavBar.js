@@ -14,7 +14,7 @@ const activeLinkStyle = {
 const styles = {
 	navBarWrapper: {
 		display: 'none',
-	},	
+	},
 	[SM_MIN_STRING]: {
 		navBarWrapper: {
 			display: 'flex',
