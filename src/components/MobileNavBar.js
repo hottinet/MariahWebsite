@@ -21,8 +21,8 @@ const styles = {
 		fontSize: 24,
 		paddingTop: 0,
 		margin: 0,
-		'&:active': {
-			border: 'none',
+		'&:focus': {
+			outline: 'none',
 		},
 	},
 	mobileNavWrapper: {

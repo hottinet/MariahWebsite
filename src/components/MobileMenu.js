@@ -41,7 +41,7 @@ const styles = {
 	},
 }
 
-const MobileMenu = ({ isMenuOpen, classes }) => (
+const MobileMenu = ({ isMenuOpen, toggleMenu, classes }) => (
 	<div
 		className={clsx(
 			classes.menu,
@@ -53,6 +53,7 @@ const MobileMenu = ({ isMenuOpen, classes }) => (
 			to="/copy"
 			exact
 			activeClassName={classes.activeMobile}
+			onClick={toggleMenu}
 		>
 				Copy Writing
 		</NavLink>

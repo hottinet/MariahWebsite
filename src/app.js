@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import injectSheet from 'react-jss'
 import { render } from 'react-dom'
 import { BrowserRouter, Route, Switch, withRouter } from 'react-router-dom'
+
 import Home from 'pages/Home'
 import Copy from 'pages/Copy'
 import Editorial from 'pages/Editorial'
@@ -9,6 +10,7 @@ import About from 'pages/About'
 import Starbucks from 'pages/Starbucks'
 import NavBar from 'components/NavBar'
 import MobileNavBar from 'components/MobileNavBar'
+
 
 const styles = {
 	wholePage: {
@@ -26,7 +28,7 @@ const styles = {
 
 const App = ({ location, classes }) => {
 	useEffect(() => {
-		// setIsMenuOpen(false)
+	// setIsMenuOpen(false)
 		window.scrollTo(0, 0)
 	}, [location])
 	return (
