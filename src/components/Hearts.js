@@ -9,11 +9,7 @@ const heartOffset = 50
 
 const styles = {
 	heartsWrapper: {
-		display: 'flex',
-		flexDirection: 'row',
-		justifyContent: 'center',
 		position: 'relative',
-		width: '100%',
 		transform: `translateX(${heartOffset / 2}px)`,
 	},
 	heartWidth: {
@@ -21,6 +17,7 @@ const styles = {
 	},
 	backwardsHeart: {
 		position: 'absolute',
+		left: 0,
 		transform: `translateX(-${heartOffset}px)`,
 	},
 }
@@ -44,11 +41,11 @@ const Hearts = ({ classes }) => {
 	const yOffset = mouseYPosition - midY
 	return (
 		<div className={classes.heartsWrapper}>
-			<img 
-				src={RedHeart} 
+			<img
+				src={RedHeart}
 				style={{ transform: `translate(${xOffset / 10}px, ${yOffset / 10}px)`}}
-				className={classes.heartWidth} 
-				alt="" 
+				className={classes.heartWidth}
+				alt=""
 			/>
 			<img
 				src={BlueHeart}

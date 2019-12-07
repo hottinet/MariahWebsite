@@ -18,11 +18,9 @@ const styles = {
 }
 
 const ContentBlock = ({ children, classes }) => (
-	<>
-		<div className={classes.contentBlockClass}>
-			{children}
-		</div>
-	</>
+	<div className={classes.contentBlockClass}>
+		{children}
+	</div>
 )
 
 ContentBlock.propTypes = {
