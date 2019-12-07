@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import injectSheet from 'react-jss'
 import { render } from 'react-dom'
 import { BrowserRouter, Route, Switch, withRouter } from 'react-router-dom'
+import { SM_MIN_VALUE } from 'constants/styles/breakpoints.js'
 
 import Home from 'pages/Home'
 import Copy from 'pages/Copy'
@@ -27,15 +28,25 @@ const styles = {
 }
 
 const App = ({ location, classes }) => {
+	const [isMenuOpen, setIsMenuOpen] = useState(false)
+	const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 	useEffect(() => {
-	// setIsMenuOpen(false)
+		setIsMenuOpen(false)
 		window.scrollTo(0, 0)
 	}, [location])
+	useEffect(() => {
+		console.log(isMenuOpen, window.outerWidth < SM_MIN_VALUE)
+		if (isMenuOpen && window.outerWidth < SM_MIN_VALUE) {
+			document.body.style.overflowY = 'hidden'
+		} else {
+			document.body.style.overflowY = 'initial'
+		}
+	}, [isMenuOpen])
 	return (
 		<div className={classes.wholePage}>
 			<div className={classes.appContainer}>
 				<NavBar />
-				<MobileNavBar />
+				<MobileNavBar isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
 				<Switch>
 					<Route path="/" exact component={Home} />
 					<Route path="/copy" exact component={Copy} />

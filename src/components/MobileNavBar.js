@@ -45,26 +45,22 @@ const styles = {
 }
 
 
-const MobileNavBar = ({ classes }) => {
-	const [isMenuOpen, setIsMenuOpen] = useState(false)
-	const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
-	return (
-		<div>
-			<MobileMenu isMenuOpen={isMenuOpen} />
-			<div className={classes.mobileNavWrapper}>
-				<button
-					className={clsx(
-						classes.mariahLink,
-						classes.button,
-					)}
-					onClick={toggleMenu}
-				>
-					Menu
-				</button>
-				<NavLink className={classes.mariahLink} to="/" exact> Mariah </NavLink>
-			</div>
+const MobileNavBar = ({ toggleMenu, isMenuOpen, classes }) => (
+	<div>
+		<MobileMenu isMenuOpen={isMenuOpen} />
+		<div className={classes.mobileNavWrapper}>
+			<button
+				className={clsx(
+					classes.mariahLink,
+					classes.button,
+				)}
+				onClick={toggleMenu}
+			>
+				Menu
+			</button>
+			<NavLink className={classes.mariahLink} to="/" exact> Mariah </NavLink>
 		</div>
-	)
-}
+	</div>
+)
 
 export default injectSheet(styles)(MobileNavBar)

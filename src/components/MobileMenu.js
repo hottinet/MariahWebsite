@@ -22,7 +22,7 @@ const styles = {
 		},
 	},
 	menu: {
-		position: 'absolute',
+		position: 'fixed',
 		display: 'none',
 		backgroundColor: 'white',
 		width: '100%',
