@@ -17,20 +17,23 @@ const styles = {
 	graphicWrapper:{
 		position: 'relative',
 		...aureaItalic,
-		fontSize: 48,
+		fontSize: 88,
+		display: 'flex',
+		justifyContent: 'center',
+		alignItems: 'center',
 	},
-	mariahGraphicWhite: {
-
-	},
-	mariahGraphicGray: {
-
+	mariahName: {
+		position: 'absolute',
+		zIndex: 2,
+		padding: 0,
+		margin: 0,
 	},
 }
 
 const Home = ({ classes }) => (
 	<div className={classes.homePage}>
 		<div className={classes.graphicWrapper}>
-			<p>
+			<p className={classes.mariahName}>
 				<MariahLetter>M</MariahLetter>
 				<MariahLetter>a</MariahLetter>
 				<MariahLetter>r</MariahLetter>
