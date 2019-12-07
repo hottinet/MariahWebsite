@@ -25,20 +25,34 @@ const styles = {
 	},
 }
 
+
 const Hearts = ({ classes }) => {
-	const [mousePosition, setMousePosition] = useState([])
+	const [mouseXPosition, setMouseXPosition] = useState()
+	const [mouseYPosition, setMouseYPosition] = useState()
 	useEffect(() => {
 		const mouseTracking = (e) => {
-			setMousePosition([e.x, e.y])
+			setMouseXPosition(e.x)
+			setMouseYPosition(e.y)
 		}
 		window.addEventListener('mousemove', mouseTracking)
-		return window.removeEventListener('mousemove', mouseTracking)
+		return () => window.removeEventListener('mousemove', mouseTracking)
 	}, [])
+
+	const midX = window.innerWidth / 2
+	const midY = window.innerHeight / 2
+	const xOffset = mouseXPosition - midX
+	const yOffset = mouseYPosition - midY
 	return (
 		<div className={classes.heartsWrapper}>
-			<img src={RedHeart} className={classes.heartWidth} alt="" />
+			<img 
+				src={RedHeart} 
+				style={{ transform: `translate(${xOffset / 10}px, ${yOffset / 10}px)`}}
+				className={classes.heartWidth} 
+				alt="" 
+			/>
 			<img
 				src={BlueHeart}
+				style={{ transform: `translate(${(xOffset / 12) - heartOffset}px, ${yOffset / 12}px)` }}
 				className={clsx(
 					classes.heartWidth,
 					classes.backwardsHeart,

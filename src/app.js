@@ -35,8 +35,7 @@ const App = ({ location, classes }) => {
 		window.scrollTo(0, 0)
 	}, [location])
 	useEffect(() => {
-		console.log(isMenuOpen, window.outerWidth < SM_MIN_VALUE)
-		if (isMenuOpen && window.outerWidth < SM_MIN_VALUE) {
+		if (isMenuOpen && window.innerWidth < SM_MIN_VALUE) {
 			document.body.style.overflowY = 'hidden'
 		} else {
 			document.body.style.overflowY = 'initial'

@@ -34,6 +34,7 @@ const styles = {
 		zIndex: 5,
 		display: 'flex',
 		justifyContent: 'space-between',
+		alignItems: 'center',
 		padding: 20,
 		fontSize: 24,
 	},
