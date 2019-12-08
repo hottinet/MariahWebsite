@@ -49,7 +49,7 @@ const styles = {
 
 const MobileNavBar = ({ toggleMenu, isMenuOpen, classes }) => (
 	<div>
-		<MobileMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu}/>
+		<MobileMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
 		<div className={classes.mobileNavWrapper}>
 			<button
 				className={clsx(

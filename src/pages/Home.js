@@ -30,24 +30,7 @@ const styles = {
 		padding: 0,
 		margin: 0,
 	},
-	resumeBanner: {
-		backgroundColor: red,
-		color: '#fff',
-		...nudistaBold,
-		fontSize: 12,
-		width: '100%',
-		position: 'fixed',
-		bottom: 75,
-		padding: '10px',
-		textAlign: 'center',
-	},
-	resumeLink: {
-		color: '#fff',
-	},
 	[SM_MIN_STRING]: {
-		resumeBanner: {
-			bottom: 0,
-		},
 		graphicWrapper: {
 			transform: 'translateY(0px)',
 		},
@@ -56,9 +39,6 @@ const styles = {
 
 const Home = ({ classes }) => (
 	<div className={classes.homePage}>
-		<div className={classes.resumeBanner}>
-			download my resume <a className={classes.resumeLink} href="caseybradford.club">here</a>
-		</div>
 		<div className={classes.graphicWrapper}>
 			<p className={classes.mariahName}>
 				<MariahLetter>M</MariahLetter>

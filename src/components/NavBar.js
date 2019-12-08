@@ -1,7 +1,8 @@
 import React from 'react'
 import injectSheet from 'react-jss'
+import clsx from 'clsx'
 import { NavLink } from 'react-router-dom'
-import { gray, white } from 'constants/styles/colors'
+import { gray, white, red } from 'constants/styles/colors'
 import { nudistaMedium, nudistaBold } from 'constants/styles/fonts'
 import { SM_MIN_STRING } from 'constants/styles/breakpoints'
 
@@ -14,19 +15,6 @@ const activeLinkStyle = {
 const styles = {
 	navBarWrapper: {
 		display: 'none',
-	},
-	[SM_MIN_STRING]: {
-		navBarWrapper: {
-			display: 'flex',
-			flexDirection: 'column',
-			justifyContent: 'space-between',
-			position: 'fixed',
-			top: 0,
-			left: 0,
-			width: '100%',
-			height: '95%',
-			padding: 24,
-		},
 	},
 	navRow: {
 		display: 'flex',
@@ -46,44 +34,96 @@ const styles = {
 	activePage: {
 		...activeLinkStyle,
 	},
+	resumeBanner: {
+		display: 'none',
+	},
+	resumeVisible: {
+		display: 'block',
+		backgroundColor: red,
+		color: '#fff',
+		...nudistaBold,
+		fontSize: 12,
+		width: '100%',
+		position: 'fixed',
+		bottom: 75,
+		padding: '10px',
+		textAlign: 'center',
+	},
+	resumeLink: {
+		color: '#fff',
+	},
+	[SM_MIN_STRING]: {
+		navBarWrapper: {
+			display: 'flex',
+			flexDirection: 'column',
+			justifyContent: 'space-between',
+			position: 'fixed',
+			top: 0,
+			left: 0,
+			width: '100%',
+			height: '100%',
+			padding: 24,
+		},
+		nav95: {
+			height: '95%',
+		},
+		resumeBanner: {
+			bottom: 0,
+		},
+	},
 }
 
 const NavBar = ({
-	classes, isHome
+	classes, isHome,
 }) => (
-	<div className={classes.navBarWrapper} >
-		<div className={classes.navRow}>
-			<NavLink
-				className={classes.navLink}
-				to="/"
-				exact
-				activeClassName={classes.activePage}
-			>
-				Mariah
-			</NavLink>
-			<NavLink
-				className={classes.navLink}
-				to="/copy"
-				activeClassName={classes.activePage}
-			>
-				Copy Writing
-			</NavLink>
+	<div>
+		<div
+			className={clsx(
+				classes.navBarWrapper,
+				{ [classes.nav95]: isHome },
+			)}
+		>
+			<div className={classes.navRow}>
+				<NavLink
+					className={classes.navLink}
+					to="/"
+					exact
+					activeClassName={classes.activePage}
+				>
+					Mariah
+				</NavLink>
+				<NavLink
+					className={classes.navLink}
+					to="/copy"
+					activeClassName={classes.activePage}
+				>
+					Copy Writing
+				</NavLink>
+			</div>
+			<div className={classes.navRow}>
+				<NavLink
+					className={classes.navLink}
+					to="/editorial"
+					activeClassName={classes.activePage}
+				>
+					Editorial
+				</NavLink>
+				<NavLink
+					className={classes.navLink}
+					to="/about"
+					activeClassName={classes.activePage}
+				>
+					About
+				</NavLink>
+			</div>
 		</div>
-		<div className={classes.navRow}>
-			<NavLink
-				className={classes.navLink}
-				to="/editorial"
-				activeClassName={classes.activePage}
-			>
-				Editorial
-			</NavLink>
-			<NavLink
-				className={classes.navLink}
-				to="/about"
-				activeClassName={classes.activePage}
-			>
-				About
-			</NavLink>
+		<div
+			className={clsx(
+				classes.resumeBanner,
+				{ [classes.resumeVisible]: isHome },
+			)}
+		>
+			download my resume <a className={classes.resumeLink} href="caseybradford.club">here</a>
 		</div>
 	</div>
 )
