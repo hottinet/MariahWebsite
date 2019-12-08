@@ -19,6 +19,7 @@ const styles = {
 	logoWrapper: {
 		display: 'flex',
 		flexDirection: 'column',
+		zIndex: 4,
 	},
 }
 

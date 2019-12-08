@@ -1,6 +1,6 @@
 import React from 'react'
 import injectSheet from 'react-jss'
-import { lightBlue, gray } from 'constants/styles/colors'
+import { lightBlue } from 'constants/styles/colors'
 import { aureaItalic } from 'constants/styles/fonts'
 
 import Hearts from 'components/Hearts'
@@ -14,7 +14,7 @@ const styles = {
 		height: '100%',
 		backgroundColor: lightBlue,
 	},
-	graphicWrapper:{
+	graphicWrapper: {
 		position: 'relative',
 		...aureaItalic,
 		fontSize: 88,

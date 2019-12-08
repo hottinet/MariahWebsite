@@ -10,7 +10,7 @@ const styles = {
 		display: 'flex',
 		justifyContent: 'center',
 		position: 'fixed',
-		zIndex: 3,
+		zIndex: 5,
 		paddingTop: 8,
 	},
 	icon: {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import injectSheet from 'react-jss'
 import clsx from 'clsx'
 import { NavLink } from 'react-router-dom'
@@ -32,7 +32,7 @@ const styles = {
 		height: 75,
 		position: 'fixed',
 		bottom: 0,
-		zIndex: 5,
+		zIndex: 7,
 		display: 'flex',
 		justifyContent: 'space-between',
 		alignItems: 'center',

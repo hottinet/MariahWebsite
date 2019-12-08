@@ -49,7 +49,7 @@ const Hearts = ({ classes }) => {
 			/>
 			<img
 				src={BlueHeart}
-				style={{ transform: `translate(${(xOffset / 12) - heartOffset}px, ${yOffset / 12}px)` }}
+				style={{ transform: `translate(${(xOffset / 15) - heartOffset}px, ${yOffset / 15}px)` }}
 				className={clsx(
 					classes.heartWidth,
 					classes.backwardsHeart,

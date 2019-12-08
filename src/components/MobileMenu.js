@@ -28,7 +28,7 @@ const styles = {
 		width: '100%',
 		height: '100%',
 		color: gray,
-		zIndex: 4,
+		zIndex: 6,
 		padding: '10%',
 	},
 	menuVisible: {
@@ -38,6 +38,21 @@ const styles = {
 	},
 	activeMobile: {
 		...activeLinkStyle,
+	},
+	xButton: {
+		border: 'none',
+		cursor: 'pointer',
+		fontSize: 36,
+		...nudistaBold,
+		textAlign: 'left',
+		padding: 0,
+		margin: 0,
+		'&:focus': {
+			outline: 'none',
+		},
+		'&:hover': {
+			color: red,
+		},
 	},
 }
 
@@ -53,7 +68,6 @@ const MobileMenu = ({ isMenuOpen, toggleMenu, classes }) => (
 			to="/copy"
 			exact
 			activeClassName={classes.activeMobile}
-			onClick={toggleMenu}
 		>
 				Copy Writing
 		</NavLink>
@@ -73,6 +87,9 @@ const MobileMenu = ({ isMenuOpen, toggleMenu, classes }) => (
 		>
 				About Me
 		</NavLink>
+		<button className={classes.xButton} onClick={toggleMenu}>
+			x
+		</button>
 	</div>
 )
 
