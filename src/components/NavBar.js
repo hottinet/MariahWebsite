@@ -49,7 +49,7 @@ const styles = {
 }
 
 const NavBar = ({
-	classes,
+	classes, isHome
 }) => (
 	<div className={classes.navBarWrapper} >
 		<div className={classes.navRow}>

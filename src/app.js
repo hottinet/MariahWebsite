@@ -29,6 +29,7 @@ const styles = {
 
 const App = ({ location, classes }) => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
+	const isHome = location === "/"
 	const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 	useEffect(() => {
 		setIsMenuOpen(false)
@@ -44,8 +45,8 @@ const App = ({ location, classes }) => {
 	return (
 		<div className={classes.wholePage}>
 			<div className={classes.appContainer}>
-				<NavBar />
-				<MobileNavBar isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
+				<NavBar isHome={isHome} />
+				<MobileNavBar isHome={isHome} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
 				<Switch>
 					<Route path="/" exact component={Home} />
 					<Route path="/copy" exact component={Copy} />
