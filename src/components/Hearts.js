@@ -43,7 +43,7 @@ const Hearts = ({ classes }) => {
 		<div className={classes.heartsWrapper}>
 			<img
 				src={RedHeart}
-				style={{ transform: `translate(${xOffset / 10}px, ${yOffset / 10}px)`}}
+				style={{ transform: `translate(${xOffset / 10}px, ${yOffset / 10}px)` }}
 				className={classes.heartWidth}
 				alt=""
 			/>
