@@ -21,6 +21,7 @@ const styles = {
 		fontSize: 24,
 		paddingTop: 0,
 		margin: 0,
+		cursor: 'pointer',
 		'&:focus': {
 			outline: 'none',
 		},
