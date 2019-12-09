@@ -9,6 +9,7 @@ import Copy from 'pages/Copy'
 import Editorial from 'pages/Editorial'
 import About from 'pages/About'
 import Starbucks from 'pages/Starbucks'
+import Fox from 'pages/Fox'
 import NavBar from 'components/NavBar'
 import MobileNavBar from 'components/MobileNavBar'
 
@@ -54,6 +55,7 @@ const App = ({ location, classes }) => {
 					<Route path="/editorial" exact component={Editorial} />
 					<Route path="/about" exact component={About} />
 					<Route path="/starbucks" exact component={Starbucks} />
+					<Route path="/Fox" exact component={Fox} />
 				</Switch>
 			</div>
 		</div>

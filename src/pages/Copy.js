@@ -29,7 +29,9 @@ const Copy = ({ classes }) => (
 			<NavLink to="/starbucks">
 				<img className={classes.imageSvg} src={Starbucks} alt="" />
 			</NavLink>
-			<img className={classes.imageSvg} src={Fox} alt="" />
+			<NavLink to="/Fox">
+				<img className={classes.imageSvg} src={Fox} alt="" />
+			</NavLink>
 			<img className={classes.imageSvg} src={Chase} alt="" />
 			<img className={classes.imageSvg} src={CPC} alt="" />
 			<img className={classes.imageSvg} src={Uber} alt="" />
