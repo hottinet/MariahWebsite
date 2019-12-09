@@ -6,4 +6,5 @@ export default {
 	'/starbucks': lightBlue,
 	'/editorial': pink,
 	'/about': lightGray,
+	'/Fox': lightBlue,
 }
