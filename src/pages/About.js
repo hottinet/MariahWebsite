@@ -23,7 +23,11 @@ const About = ({ classes }) => (
 	<PageWrapper iconSrc={AboutIcon}>
 		<ContentBlock>
 			<Header>About Me</Header>
-			<DescriptionText>Mariah Adcox is a writer and MFA candidate in Creative Nonfiction at Columbia University in New York City. </DescriptionText>
+			<DescriptionText>
+				Email Address <br />
+				Brooklyn, New York <br />
+				Mariah Adcox is a writer and MFA candidate in Creative Nonfiction at Columbia University in New York City.
+			</DescriptionText>
 			<ImageAspectRatio>
 				<img src={Headshot} className={classes.imageWidth} alt="" />
 			</ImageAspectRatio>
