@@ -9,6 +9,7 @@
   "scripts": {
     "compile": "npm webpack",
     "start": "node server.js",
+    "build": "webpack --config webpack.config.js --colors ",
     "build:dev": "routing=hash webpack --config webpack.config.dev.js --colors ",
     "lint": "eslint src --fix"
   },
