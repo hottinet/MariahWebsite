@@ -31,7 +31,6 @@ const styles = {
 const App = ({ location, classes }) => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
 	const isHome = location.pathname === '/'
-	console.log(location)
 	const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 	useEffect(() => {
 		setIsMenuOpen(false)
