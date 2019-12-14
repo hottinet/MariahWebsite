@@ -6,6 +6,10 @@
   "repository": "",
   "author": "<troychryssos@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": "12.11.1",
+    "npm": "6.11.3"
+  },
   "scripts": {
     "compile": "npm webpack",
     "start": "node server.js",
