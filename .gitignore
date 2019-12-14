@@ -10,6 +10,7 @@
 .env.test.local
 .env.production.local
 www/bundle.js
+www/static
 .vscode
 
 npm-debug.log*
