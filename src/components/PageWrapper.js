@@ -12,7 +12,7 @@ const styles = {
 		justifyContent: 'center',
 		width: '100%',
 		minHeight: '100%',
-		paddingBottom: 200,
+		paddingBottom: 50,
 	},
 	childWrapper: {
 		display: 'flex',

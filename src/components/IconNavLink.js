@@ -9,7 +9,7 @@ const styles = {
 	navLinkWrapper: {
 		display: 'flex',
 		justifyContent: 'center',
-		position: 'fixed',
+		position: 'absolute',
 		zIndex: 5,
 		paddingTop: 8,
 	},
