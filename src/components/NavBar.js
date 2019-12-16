@@ -123,7 +123,7 @@ const NavBar = ({
 				{ [classes.resumeVisible]: isHome },
 			)}
 		>
-			download my resume <a className={classes.resumeLink} href="caseybradford.club">here</a>
+			download my resume <a className={classes.resumeLink} href="https://caseybradford.club/static/assets/resume.pdf">here</a>
 		</div>
 	</div>
 )
