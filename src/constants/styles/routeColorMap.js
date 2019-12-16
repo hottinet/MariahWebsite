@@ -7,4 +7,5 @@ export default {
 	'/editorial': pink,
 	'/about': lightGray,
 	'/Fox': lightBlue,
+	'/Chase': lightBlue,
 }

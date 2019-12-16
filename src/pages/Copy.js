@@ -8,8 +8,7 @@ import CopyWritingIcon from 'static/svg/copy-title.svg'
 import Starbucks from 'static/svg/Logos/starbucks.svg'
 import Fox from 'static/svg/Logos/fox.svg'
 import Chase from 'static/svg/Logos/chase.svg'
-import CPC from 'static/svg/Logos/CPC.svg'
-import Uber from 'static/svg/Logos/uber.svg'
+
 
 const styles = {
 	imageSvg: {
@@ -32,9 +31,9 @@ const Copy = ({ classes }) => (
 			<NavLink to="/Fox">
 				<img className={classes.imageSvg} src={Fox} alt="" />
 			</NavLink>
-			<img className={classes.imageSvg} src={Chase} alt="" />
-			<img className={classes.imageSvg} src={CPC} alt="" />
-			<img className={classes.imageSvg} src={Uber} alt="" />
+			<NavLink to="/Chase">
+				<img className={classes.imageSvg} src={Chase} alt="" />
+			</NavLink>
 		</div>
 	</PageWrapper>
 )
