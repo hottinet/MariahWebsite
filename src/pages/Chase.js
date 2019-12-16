@@ -13,6 +13,10 @@ import Uber2 from 'static/projects/chase/uber2.png'
 import Uber3 from 'static/projects/chase/uber3.png'
 import Quickpay1 from 'static/projects/chase/quickpay1.png'
 import Quickpay2 from 'static/projects/chase/quickpay2.png'
+import CPC1 from 'static/projects/chase/cpc1.png'
+import CPC2 from 'static/projects/chase/cpc2.png'
+import CPC3 from 'static/projects/chase/cpc3.png'
+import CPC4 from 'static/projects/chase/cpc4.png'
 
 
 const styles = {
@@ -43,6 +47,16 @@ const Chase = ({ classes }) => (
 			<ImageAspectRatio>
 				<img src={Quickpay1} className={classes.imageWidth} alt="" />
 				<img src={Quickpay2} className={classes.imageWidth} alt="" />
+			</ImageAspectRatio>
+			<Header>Chase Private Client</Header>
+			<DescriptionText>
+				To advertise for Chase Private Client on Chase's main website, we created a series of pieces of owned media extolling the capabilities and advantages of becoming a Chase Private Client. Owned media units ranged from ATM screens to banners.
+			</DescriptionText>
+			<ImageAspectRatio>
+				<img src={CPC1} className={classes.imageWidth} alt="" />
+				<img src={CPC2} className={classes.imageWidth} alt="" />
+				<img src={CPC3} className={classes.imageWidth} alt="" />
+				<img src={CPC4} className={classes.imageWidth} alt="" />
 			</ImageAspectRatio>
 		</ContentBlock>
 	</PageWrapper>

@@ -8,6 +8,7 @@ import CopyWritingIcon from 'static/svg/copy-title.svg'
 import Starbucks from 'static/svg/Logos/starbucks.svg'
 import Fox from 'static/svg/Logos/fox.svg'
 import Chase from 'static/svg/Logos/chase.svg'
+import CamilleK from 'static/svg/Logos/camillek.svg'
 
 
 const styles = {
@@ -33,6 +34,9 @@ const Copy = ({ classes }) => (
 			</NavLink>
 			<NavLink to="/Chase">
 				<img className={classes.imageSvg} src={Chase} alt="" />
+			</NavLink>
+			<NavLink to="/camillek">
+				<img className={classes.imageSvg} src={CamilleK} alt="" />
 			</NavLink>
 		</div>
 	</PageWrapper>

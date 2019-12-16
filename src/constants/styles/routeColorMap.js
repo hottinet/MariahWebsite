@@ -8,4 +8,5 @@ export default {
 	'/about': lightGray,
 	'/Fox': lightBlue,
 	'/Chase': lightBlue,
+	'/camillek': lightBlue,
 }

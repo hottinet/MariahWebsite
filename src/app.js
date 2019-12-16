@@ -11,6 +11,7 @@ import About from 'pages/About'
 import Starbucks from 'pages/Starbucks'
 import Fox from 'pages/Fox'
 import Chase from 'pages/Chase'
+import CamilleK from 'pages/CamilleK'
 import NavBar from 'components/NavBar'
 import MobileNavBar from 'components/MobileNavBar'
 
@@ -57,6 +58,7 @@ const App = ({ location, classes }) => {
 					<Route path="/starbucks" exact component={Starbucks} />
 					<Route path="/Fox" exact component={Fox} />
 					<Route path="/Chase" exact component={Chase} />
+					<Route path="/camillek" exact component={CamilleK} />
 				</Switch>
 			</div>
 		</div>
