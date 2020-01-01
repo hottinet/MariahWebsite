@@ -19,6 +19,7 @@ const styles = {
 	navRow: {
 		display: 'flex',
 		width: '100%',
+		maxWidth: 1100,
 		justifyContent: 'space-between',
 	},
 	navLink: {
@@ -57,6 +58,7 @@ const styles = {
 			display: 'flex',
 			flexDirection: 'column',
 			justifyContent: 'space-between',
+			alignItems: 'center',
 			position: 'fixed',
 			top: 0,
 			left: 0,

@@ -23,7 +23,6 @@ const styles = {
 		justifyContent: 'center',
 	},
 	appContainer: {
-		maxWidth: 1366,
 		width: '100%',
 		height: '100%',
 		position: 'relative',
