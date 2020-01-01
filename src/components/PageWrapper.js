@@ -3,13 +3,12 @@ import { withRouter } from 'react-router-dom'
 import injectSheet from 'react-jss'
 import IconNavLink from 'components/IconNavLink'
 import routeColorMap from 'constants/styles/routeColorMap'
-import { SM_MIN_STRING } from 'constants/styles/breakpoints'
-import { mdIconHeight, smIconHeight } from 'constants/styles/iconHeight'
 
 const styles = {
 	pageWrapper: {
 		display: 'flex',
-		justifyContent: 'center',
+		flexDirection: 'column',
+		alignItems: 'center',
 		width: '100%',
 		minHeight: '100%',
 		paddingBottom: 50,
@@ -18,12 +17,7 @@ const styles = {
 		display: 'flex',
 		justifyContent: 'center',
 		width: '100%',
-		marginTop: smIconHeight + 24,
-	},
-	[SM_MIN_STRING]: {
-		childWrapper: {
-			marginTop: mdIconHeight + 24,
-		},
+		marginTop: 24,
 	},
 }
 
